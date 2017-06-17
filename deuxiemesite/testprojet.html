@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<header>
+
+<h2>TEST LOGIN</h2>
+
+
+<p>Pseudo :<input id="pseudo"></p>
+
+<p>MDP :   <input id="mdp"></p> 
+
+<button type="button" onclick="login()">Connection</button>
+
+<p id="test"> TEST </p>
+
+<script>
+function login() {
+    var x;
+    if (document.getElementById("pseudo").value == "" && document.getElementById("mdp").value == ""){
+        document.getElementById("test").innerHTML = "Pseudo vide et mdp vide";
+    } else {
+        document.getElementById("test").innerHTML = "Pseudo entré et/ou mdp entré";
+    }
+}
+</script>
+
+</header>
+</html>
