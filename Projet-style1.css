@@ -89,6 +89,18 @@ div article{
 	
 }
 
+article.box
+{
+	display: inline-block; 
+	height: 20px;
+	border: 2px solid black;
+	border-radius: 0;
+	width: 100px;
+	margin: 1	;
+	padding: 0;
+}
+
+
 a {
 	color: black;
 	text-align: center;
@@ -113,6 +125,10 @@ nav a:hover{
 	background-color: #101010;
 }
 
+#add {
+	width: 200px;
+}
+
 nav{
 	display: inline-block;
 }
@@ -125,10 +141,15 @@ nav.navdroite{
 	text-align: right;
 }
 
+div {
+	text-align: center;
+}
+
 div.contour{
 	padding-top: 40px;
 	padding-left: 120px;
 	padding-right: 120px;
+	padding-bottom: 40px;
 	border-collapse: collapse;
 	background-color: #444444;
 	text-align: center;
@@ -229,5 +250,14 @@ article p.court {
 	background-color: white;
 	color: black;
 	
+}
+
+p  {
+	margin: 8 8 8 8;
+	padding: 5 5 5 5;
+	font-size: 20px;
+	background-color: white;
+	color: black;
+	display: inline-block;
 }
 
