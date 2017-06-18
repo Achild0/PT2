@@ -3,37 +3,29 @@
 <header>
 	<script>
 		function login(){
-			
 		var symbols = ["*","+","/","|",":","<",">","?","!"];
 		var ite = 0;
-			
 		if(document.getElementById("pseudo").value=="" || document.getElementById("mdp").value==""){
 			window.alert("Veuillez rentrer votre pseudo et votre mot de passe.");
-				}
-			
+		}
 		else {
 			for(ite;ite < (symbols.length);ite++){
-				
 				if(document.getElementById("pseudo").value.indexOf(symbols[ite])!=-1){
-					
 					window.alert("Votre pseudo contient un ou des symboles interdits.");
-					
-					}
-				
+				}
 				if(document.getElementById("mdp").value.indexOf(symbols[ite])!=-1){
-					
 					window.alert("Votre mot de passe contient un ou des symboles interdits.");
-					
-					}
 				}
 			}
+			document.getElementById("login").submit();
+		}
 		}
 	</script>
 
 
 <h2>TEST LOGIN</h2>
 
-<form method="post" action="login.php">
+<form id=login" method="post" action="login.php">
 	<p>
 		<label for="pseudo">Pseudo :</label><br></br><input id="pseudo" name="pseudo" type="text">
 	</p>
@@ -44,8 +36,6 @@
 	<button type="button" onclick="login()">Connexion</button>
 
 </form>
-
-
 
 </header>
 </html>
