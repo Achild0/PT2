@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<header>
+
+<h2>Création d'un projet</h2>
+
+<form method="post" action="creation.php">
+	<fieldset>
+		<legend>Informations obligatoires</legend>
+		<p>
+			<label for="titre">Titre : </label><br/><input id="titre" name="titre" type="text" required>
+		</p>
+		
+		<p>
+			<p>Domaines : </p>
+			<input type="checkbox" name="web" id="web" /> <label for="web">Web</label><br />
+			<input type="checkbox" name="mobile" id="mobile" /> <label for="mobile">Mobile</label><br />
+			<input type="checkbox" name="reseau" id="reseau" /> <label for="reseau">Réseau</label><br />
+			<input type="checkbox" name="logiciel" id="logiciel" /> <label for="logiciel">Logiciel</label>
+		</p>
+		
+		<p>
+			<label for="niveau"> Niveau : </label>
+			<select name="niveau" id="niveau">
+				<option value="1A">1ère Année</option>
+				<option value="2A">2ème Année</option>
+				<option value="AS">Année Spéciale</option>
+			</select>
+		</p>
+		
+		<p>
+			<label for="date">Date de rendu : </label><br/><input id="date" name="date" type="date" value="2017/06/18" required>
+		</p>
+	</fieldset>
+	<br />
+	<fieldset>
+		<legend>Options</legend>
+		<p>
+			<label for="image">Url d'une image personnalisée : </label><br />
+			<input type="url" name="image" id="image" />
+		</p>
+   
+		<p>
+			<label for="desc">Commentaires / Description du projet : </label><br />
+			<textarea name="desc" id="desc" rows="8" cols="100"></textarea>
+		</p>
+	</fieldset>
+	<br />
+	<input type="submit" value="Créer" />
+
+</form>
+
+
+
+</header>
+</html>
