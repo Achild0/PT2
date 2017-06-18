@@ -64,7 +64,7 @@ body {
 	background-attachment: fixed;
 }
 
-div article img{
+section article img{
 	width: 640px;
 	padding-left: 5px;
 	padding-bottom: 5px;
@@ -75,7 +75,7 @@ div article img{
 	}
 
 
-div article{
+section article{
 	border: 10px solid #004575;
 	border-radius: 10px;
 	text-align: center;
@@ -88,6 +88,18 @@ div article{
 	background-color: #004575;
 	
 }
+
+article.box
+{
+	display: inline-block; 
+	height: 20px;
+	border: 2px solid black;
+	border-radius: 0;
+	width: 100px;
+	margin: 1	;
+	padding: 0;
+}
+
 
 a {
 	color: black;
@@ -113,6 +125,10 @@ nav a:hover{
 	background-color: #101010;
 }
 
+#add {
+	width: 200px;
+}
+
 nav{
 	display: inline-block;
 }
@@ -125,16 +141,21 @@ nav.navdroite{
 	text-align: right;
 }
 
-div.contour{
+section {
+	text-align: center;
+}
+
+section.contour{
 	padding-top: 40px;
 	padding-left: 120px;
 	padding-right: 120px;
+	padding-bottom: 40px;
 	border-collapse: collapse;
 	background-color: #444444;
 	text-align: center;
 }
 
-div.corps {
+section.corps {
 	margin-top: 40px;
 	padding-top: 10px;
 	padding-left: 20px;
@@ -229,5 +250,14 @@ article p.court {
 	background-color: white;
 	color: black;
 	
+}
+
+p  {
+	margin: 8 8 8 8;
+	padding: 5 5 5 5;
+	font-size: 20px;
+	background-color: white;
+	color: black;
+	display: inline-block;
 }
 
